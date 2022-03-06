@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RandoGames</string>
+    <string name="version">Version 0.1</string>
+    <string name="maker">Made by Joan Gil</string>
+</resources>

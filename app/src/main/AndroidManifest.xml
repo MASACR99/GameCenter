@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a2048">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.2048">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameStarter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SplashTFE"
+            android:exported="true"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".PegSolitaire"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SplashPeg"
+            android:exported="true"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".GameSetup"
+            android:exported="true"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".PegSolitaireSetup"
+            android:exported="true"
+            android:noHistory="true">
+        </activity>
+    </application>
+
+</manifest>

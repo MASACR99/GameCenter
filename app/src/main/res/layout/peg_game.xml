@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:text="Peg solitaire"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:columnCount="7"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:rowCount="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titler"
+        app:layout_constraintVertical_bias="0.49"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+        <!--
+        <ImageView
+            android:id="@+id/cell00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell03"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell04"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell05"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell06"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell24"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell25"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell26"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell30"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell34"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell35"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell36"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell40"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell41"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell42"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell43"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell44"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell45"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell46"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell50"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell51"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell52"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell53"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell54"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell55"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell56"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell60"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell61"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell62"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell63"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell64"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell65"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" />
+
+        <ImageView
+            android:id="@+id/cell66"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/daco_4431349" /> -->
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/revertButtonPeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/titler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titler"
+        app:layout_constraintTop_toTopOf="@+id/titler"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/timerPeg"
+        android:layout_width="108dp"
+        android:layout_height="24dp"
+        android:text="00:00:000"
+        app:layout_constraintStart_toStartOf="@+id/titler"
+        app:layout_constraintTop_toBottomOf="@+id/titler" />
+
+    <TextView
+        android:id="@+id/movesPeg"
+        android:layout_width="72dp"
+        android:layout_height="23dp"
+        android:text="Moves: 0"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/titler"
+        app:layout_constraintTop_toBottomOf="@+id/titler" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

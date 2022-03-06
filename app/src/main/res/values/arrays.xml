@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="board_titles">
+        <item>French</item>
+        <item>German</item>
+        <item>English</item>
+        <item>Diamond</item>
+    </string-array>
+    <string-array name="board_info">
+        <item>French board, 37 holes, from the 17th century</item>
+        <item>German board, 45 holes, 1779</item>
+        <item>English board, 33 holes, standard</item>
+        <item>Diamond board, 41 holes</item>
+    </string-array>
+    <string-array name="board_images">
+        <item>@drawable/peg_type1</item>
+        <item>@drawable/peg_type2</item>
+        <item>@drawable/peg_type3</item>
+        <item>@drawable/peg_type4</item>
+    </string-array>
+</resources>
